@@ -1,7 +1,8 @@
 import React from "react";
 import {
-  BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Label, Legend
+  BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid
 } from "recharts";
+
 
 export default function TeamRankingComponent({ rankings, translations, language }) {
   const sorted = [...rankings].sort((a, b) => b.points - a.points);
